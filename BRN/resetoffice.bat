@@ -20,7 +20,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogo
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Userinit /t REG_EXPAND_SZ /d "c:\windows\system32\userinit.exe," /f
 
-net localgroup administrators "TM\Domain Users" /delete
+net localgroup administrators "LFN\Domain Users" /delete
 
 manage-bde -protectors -enable C:
 
